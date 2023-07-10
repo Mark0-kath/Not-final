@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web</title>
+    <link rel="stylesheet" href="Web.css" title="" type=""/>
+    <style>
+         body {
+           
+            background-image:url('Dot.png');
+            background-position: center center;
+            color: white;
+            
+           /* Set the tex(t color to white */
+        }
+        
+        .circle-image {
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        
+        .about-me,
+        .Movies {
+            margin-top: 20px;
+            text-align: center;
+            display: none;
+            color: black; /* Set the text color to black */
+        }
+        
+        .about-me-button,
+        .Movies-button {
+            background-color: yellow;
+            color: black;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .Movies-image {
+            max-width: 200px;
+            height:auto;
+            margin: 10px auto; 
+            
+        }
+        .about-me-image {
+          max-width:300px ;
+          height:300px;
+          margin: 10px auto;
+          border-radius:50%;
+          object-fit:cover ;
+        
+        }
+    </style>
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h1 class="welcome">Welcome to my Webpage</h1>
+        <div class="circle-image">
+            <img src="Spicyuu.png" alt=""/>
+        </div>
+        <h1 style="color:white;">cutie pie</h1>
+        <div id="about-me" class="about-me">
+            <h2 style="color:white;">About Me</h2>
+            <p style="color:white;">
+               Hello, I'm Marco Niño Empacis. I'm passionate about studying programing language and learning them to create new things.I have also enjoy watching Movies you can watch my favorite movies in the movie button.I currently studying in SIBONGA COMMUNITY COLLEGE Taking the course: BACHELOR OF SCIENCE AND INFORMATION TECHNOLOGY.I created this webpage to share my thoughts and experience </p>
+                 <img src="Scc.png" alt="" class="about-me-image"> <h4 style="color:white;">you can visit my school facebook page</h4>
+                 <a href="https://m.facebook.com/sibongacommunitycollege"style="color:white">click here</a>
+        </div>
+        <button class="about-me-button" onclick="toggleSection('about-me')">About Me</button>
+        
+        <div id="Movies" class="Movies">
+            <h2 style ="color:red;">My Movies</h2>
+            <ul>
+                <li>
+                    <h1 style="color:white;">DEMON SLAYER</h1>
+                    <img src="demon.png" alt="" class="Movies-image">
+                    <h2 style="color:white;">SYNOPSIS:</h2>
+                    <p style="color:white;">Teenage Tanjiro Kamado, who strives to become a Demon Slayer after his family was slaughtered and his younger sister, Nezuko, turned into a demon</p>
+                    <h3 style="color:white;">You can watch it here</h3>
+                    <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bilibili.tv/en/play/34580&ved=2ahUKEwjNovfB2vz_AhU_d2wGHdcgARIQFnoECA4QAQ&usg=AOvVaw0qP4qe82KwYqrH4rcMmRQc" style="color: white;">Watch here!</a>
+                </li>
+                <li>
+                    <h1 style="color:white;">ONE PIECE</h1>
+                    <img src="One.png" alt="" class="Movies-image">
+                    <h2 style="color:white;">SYNOPSIS:</h2>
+                    <p style="color:white;">ONE PIECE is a legendary high-seas quest unlike any other. Luffy is a young adventurer who has longed for a life of freedom ever since he can remember. He sets off from his small village on a perilous journey to find the legendary fabled treasure, ONE PIECE, to become King of the Pirates!</p>
+                    <h3 style="color: white;">You can watch it here</h3>
+                    <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bilibili.tv/en/play/37976&ved=2ahUKEwiei9fz2fz_AhWpVWwGHRSzAVAQFnoECBEQAQ&usg=AOvVaw3uV1OAmq4TQO8gsD7sNibr" style="color: white;">Watch here!</a>
+                </li>
+                <li>
+                    <h1 style="color:White;">HOWL'S MOVING CASTLE</h1>
+                    <img src="Howl.png" alt="" class="Movies-image">
+                    <h2 style="color: white;">SYNOPSIS:</h2>
+                    <p style="color: white;">Sophie (Emily Mortimer) has an uneventful life at her late father's hat shop, but all that changes when she befriends wizard Howl (Christian Bale), who lives in a magical flying castle. However, the evil Witch of Waste (Lauren Bacall) takes issue with their budding relationship and casts a spell on young Sophie, which ages her prematurely. Now Howl must use all his magical talents to battle the jealous hag and return Sophie to her former youth and beauty.</p>
+                    <h3 style="color:white;">You can watch it here</h3>
+                    <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bilibili.tv/en/video/4787533799365120&ved=2ahUKEwixz5CM2fz_AhWqcGwGHVOMDYA4ChC3AnoECA4QAg&usg=AOvVaw2pf9gyXLmV_Kd_HLI98GzA" style="color:white;">Watch here!</a>
+                </li>
+                <li>
+                  <h1 style="color:white;">JUJUTSU KAISEN 0 MOVIE</h1>
+                  <img src="Jujustu.png" alt="" class="Movies-image">
+                  <h2 style="color:white;">SYNOPSIS </h2>
+                    <p style="color:white;">Yuta Okkotsu gains control of an extremely powerful, cursed spirit and gets enrolled in the Tokyo Prefectural Jujutsu High School by sorcerers to help him control his power and keep an eye on him.</p>
+                  <h3 style = "color:white;"> You can Watch it here</h3>
+                  <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bilibili.tv/en/video/2046153938&ved=2ahUKEwi69eShxv7_AhXkS2wGHSfgD6EQwqsBegQIChAE&usg=AOvVaw3h6BXb1WD8PiJsSzRSmSPY"style="color: white;">Watch here!</a>
+                </li>
+                <li>
+                  <h1 style="color:white">
+            </ul>
+        </div>
+        <button class="Movies-button" onclick="toggleSection('Movies')">My Movies</button>
+        <h1>Contact Us</h1>
+        <div class="info">
+          <b>Name:</b>Marco Niño Empacis
+          </br>
+          <b>Email:</b>markempacis123@gmail.com
+          </br>
+          <b>Facebook:</b> <a href="https://www.facebook.com/markmarco.empasis"style="color:white">Marco Niño Empacis</a>
+          </br>
+        </div>
+        <footer>
+    &copy; 2023 My Web. All rights reserved.
+  </footer>
+    </center>
+</body>
+</html>
+
+
+
